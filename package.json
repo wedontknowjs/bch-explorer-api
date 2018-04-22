@@ -1,0 +1,45 @@
+{
+  "name": "@wedontknowjs/bch-explorer-api",
+  "description": "A Bitcoin Cash blockchain REST and web socket API service for Bch Node.",
+  "version": "0.0.7",
+  "repository": "git://github.com/wedontknowjs/bch-explorer-api.git",
+  "bugs": {
+    "url": "https://github.com/owstack/bch-explorer-api/issues"
+  },
+  "homepage": "https://github.com/owstack/bch-explorer-api",
+  "license": "MIT",
+  "keywords": [
+    "explorer",
+    "explorer api",
+    "blockchain",
+    "bitcoin cash api",
+    "blockchain api",
+    "json",
+    "bch"
+  ],
+  "engines": {
+    "node": ">=8.2.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec --recursive"
+  },
+  "main": "bch-node",
+  "bchNode": "bch-node",
+  "dependencies": {
+    "@wedontknowjs/bch-lib": "^0.0.6",
+    "@wedontknowjs/bch-message": "^0.0.5",
+    "async": "^2.5.0",
+    "body-parser": "^1.13.3",
+    "compression": "^1.6.1",
+    "lru-cache": "^4.0.1",
+    "morgan": "^1.7.0",
+    "request": "^2.64.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.7.2",
+    "should": "^8.3.1",
+    "sinon": "^1.10.3"
+  }
+}
